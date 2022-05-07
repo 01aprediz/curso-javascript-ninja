@@ -34,9 +34,8 @@ var soma = 15 + 8;
 
     comida[1];
 
-// Digite o código que verifica se a variável `soma' é igual a variável `myvar` (testando 
-
-      também o tipo).
+// Digite o código que verifica se a variável `soma' é igual a variável `myvar` (testando também o tipo).
+      
       soma === myvar;
 
 // Digite o código que verifica se a variável `myvar` é menor ou igual à variável `soma`.
