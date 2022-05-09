@@ -4,29 +4,46 @@ Nesse exercício, você está livre para escolher os nomes para suas variáveis 
 
 ```js
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-?
+      
+      function soma(n1, n2){
+          
+          return n1 + n2;
+      
+      }
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-?
+    
+    var total = soma(5, 2);
+    total += 5; 
 
 // Qual o valor atualizado dessa variável?
-?
+
+    12
 
 // Declare uma nova variável, sem valor.
-?
+    
+    var valor;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-?
+
+    function adicionar(){
+    
+         valor = 76;
+         return 'O valor da variável agora é ' + valor;
+    
+    }
 
 // Invoque a função criada acima.
-?
+      
+      adicionar();
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
+
+    /* 'O valor da variável agora é 76' */
 
 /*
 Crie uma função com as seguintes características:
@@ -34,8 +51,21 @@ Crie uma função com as seguintes características:
 2. Se qualquer um dos três argumentos não estiverem preenchidos, a função deve retornar a string:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
-*/
-?
+*/      
+        
+        function multiplicar(n1, n2, n3){
+        
+              if(n1 * n2 * n3 === NaN){
+                
+                  return 'Preencha todos os valores corretamente!';
+              
+              } else{
+                  
+                   return n1 * n2 * n3;
+              
+              }
+           
+        }
 
 // Invoque a função criada acima, passando só dois números como argumento.
 ?
