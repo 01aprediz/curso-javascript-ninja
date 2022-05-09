@@ -13,8 +13,8 @@ Nesse exercício, você está livre para escolher os nomes para suas variáveis 
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
     
-    var total = soma(5, 2);
-    total += 5; 
+    var total = soma(5, 2) + 5;
+    
 
 // Qual o valor atualizado dessa variável?
 
@@ -55,29 +55,33 @@ Crie uma função com as seguintes características:
         
         function multiplicar(n1, n2, n3){
         
-              if(n1 * n2 * n3 === NaN){
+              if(n1 === undefined || n2 === undefined || n3 === undefined){
                 
                   return 'Preencha todos os valores corretamente!';
               
-              } else{
+              } else{ // Obs. O return também pode ser usado sem o else, já que a função finaliza logo após um return
                   
-                   return n1 * n2 * n3;
+                   return (n1 * n2 * n3) + 2;
               
               }
            
         }
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+
+          multiplicar(1, 2)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+
+          'Preencha todos os valores corretamente!'
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+
+        multiplicar(2, 3, 2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 ?
+      // 14
 
 /*
 Crie uma função com as seguintes características:
@@ -88,8 +92,27 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+
+    function calculo(a, b, c){
+    
+        if(a !== undefined && b === undefined && c === undefined){
+          
+            return a;
+            
+        } else if(a !== undefined && b !== undefined && c === undefined){
+            
+            return a + b;
+        
+        } else if(a !== undefined && b !== undefined && c !== undefined){
+          
+            return (a + b) / c;
+        
+        }
+      return false;
+    }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
 ?
-```
+      calculo(); // false
+      calculo(2, 2) // 4
+      calculo(2, 2, 1) // 4
