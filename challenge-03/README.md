@@ -190,9 +190,9 @@ correta, de acordo com os dados inseridos no objeto.
                       mts = 'metro';
                 }
        return "Olá, eu sou " + ooua + " " + nome + " " + sobreNome + ", tenho " + idade + " " + ps + ", " + altura + "m" + ", meu peso é " 
-        + peso + " e, só hoje, eu já caminhei " + metrosCaminhados + " " + mts + "!" 
+        + peso + "Kg e, só hoje, eu já caminhei " + metrosCaminhados + " " + mts + "!" 
   };
 
 // Agora, apresente-se ;)
-?
-```
+pessoa.apresentacao() // 'Olá, eu sou a 01 aprendiz, tenho 20 anos, 1.8m, meu peso é 70Kg e, só hoje, eu já caminhei 18 metros!'
+
