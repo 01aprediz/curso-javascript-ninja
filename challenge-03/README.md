@@ -149,7 +149,7 @@ comentários inline ao lado da instrução para mostrar a resposta retornada)
 Quantos metros a pessoa andou? (Use uma instrução para responder e comentários
 inline ao lado da instrução para mostrar a resposta retornada)
 */
-      pessoa.caminhouQuantosMetros; // 38
+      pessoa.caminhouQuantosMetros; // 18
 
 /*
 Agora vamos deixar a brincadeira um pouco mais divertida! :D
