@@ -125,21 +125,23 @@ citado acima, no lugar de "pessoas".
             
             var pessoas = carro.quantidadePessoas;
             var assentos = carro.assentos;
-            var vagas = carro.assentos - carro.quantidadePessoas;
+            var vagas = assentos - pessoas;
+            var plural = 'pessoas';
             
-            if(qtdPessoas > ){   
-               
-               return  "O carro já está lotado!";
-                 
+            if(pessoas === assentos){
+                
+                return  "O carro já está lotado!";
+            
             };
-            
+   
             if(qtdPessoas > vagas){     
-            
-              return "Só cabem mais " + vagas + " pessoas!"
+              
+              
+              return "Só cabem mais " + vagas + plural;
             
             };
-           
-      return "Já temos " + vPessoas + " pessoa pessoas no carro!";
+      carro.quantidadePessoas = pessoas + qtdPessoas;     
+      return "Já temos " + carro.quantidadePessoas + " pessoa pessoas no carro!";
       };
 
 /*
